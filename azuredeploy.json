@@ -29,7 +29,7 @@
         "publicIPaddressName":"[concat(parameters('project-name'), '-ip')]",
         "NetworkInterfaceCardname": "[concat(parameters('project-name'), '-nic')]",
         "NetworkSecurityGroup": "[concat(parameters('project-name'), '-nsg')]",
-        "StorageaccountName": "[concat(parameters('project-name'), '-str')]"
+        "StorageaccountName": "[concat(parameters('project-name'), 'str0001')]"
     },
     "resources": [{
         "name": "[variables('StorageaccountName')]",
@@ -165,7 +165,7 @@
             "storageProfile": {
                 "imageReference": {
                     "publisher": "Canonical",
-                    "offer": "UbuntuServer",
+                    "offer": "0001-com-ubuntu-server-jammy",
                     "sku": "22_04-lts-gen2",
                     "version": "latest"
                 },
